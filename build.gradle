@@ -1,0 +1,9 @@
+// Top-level build file for AutoTally Pay.
+// NOTE: Gradle 8.12 is used because the 8.2.1 daemon cannot talk to its
+// client in this VM ("Could not receive a message from the daemon");
+// 8.12 daemons ran builds fine here on 2026-11-10.
+plugins {
+    id 'com.android.application' version '8.7.3' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.24' apply false
+    id 'org.jetbrains.kotlin.kapt' version '1.9.24' apply false
+}

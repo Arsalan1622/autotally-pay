@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+keystore.properties
+*.keystore
+*.jks
+keystore-backup/
+deliverables/
+app/build/
+# Decoded binary assets (source of truth is tools/assets-b64/*.b64,
+# restored by tools/decode-assets.sh).
+app/src/main/res/font/noto_nastaliq_urdu.ttf
+app/src/main/res/mipmap-*/ic_launcher.png
+app/src/main/res/mipmap-*/ic_launcher_round.png
+gradle/wrapper/gradle-wrapper.jar
