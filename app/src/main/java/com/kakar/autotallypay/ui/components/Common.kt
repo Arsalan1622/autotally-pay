@@ -52,9 +52,9 @@ fun formatDate(millis: Long): String =
 @Composable
 fun BigButton(
     text: String,
-    onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    enabled: Boolean = true
+    enabled: Boolean = true,
+        onClick: () -> Unit
 ) {
     Button(
         onClick = onClick,
