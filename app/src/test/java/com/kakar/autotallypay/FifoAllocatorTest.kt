@@ -69,6 +69,6 @@ class FifoAllocatorTest {
     fun fullyPaidBillsAreSkipped() {
         val bills = listOf(BillDue(1, 500000, 500000, 1000), BillDue(2, 300000, 0, 2000))
         assertEquals(listOf(Allocation(2, 100000)), Fifo.allocate(bills, 100000))
-        assertEquals(200000L, Fifo.totalOutstanding(bills))
+        assertEquals(300000L, Fifo.totalOutstanding(bills))
     }
 }
