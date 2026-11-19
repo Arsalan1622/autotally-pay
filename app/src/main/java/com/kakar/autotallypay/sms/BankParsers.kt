@@ -28,11 +28,11 @@ object BankParsers {
     )
     private val PAREN_NAME_REGEX = Regex("""\(\s*([A-Za-z .]{3,40})\s*\)""")
     private val FROM_NAME_REGEX = Regex(
-        """\bfrom\s+([A-Za-z][A-Za-z .]{2,30})(?:\.|,| on | at | Trx| Txn| Ref|$)""",
+        """\bfrom\s+([A-Za-z][A-Za-z .]{2,30}?)(?:\.|,| on | at | Trx| Txn| Ref|$)""",
         RegexOption.IGNORE_CASE
     )
     private val BY_NAME_REGEX = Regex(
-        """\bby\s+([A-Za-z][A-Za-z .]{2,30})(?:\.|,| on |$)""",
+        """\bby\s+([A-Za-z][A-Za-z .]{2,30}?)(?:\.|,| on |$)""",
         RegexOption.IGNORE_CASE
     )
     private val AC_HINT_REGEX = Regex("""A/?C\s*\*+(\d{4})""", RegexOption.IGNORE_CASE)
